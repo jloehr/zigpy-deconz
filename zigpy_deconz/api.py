@@ -207,6 +207,11 @@ class Deconz:
         return self._device_state.network_state
 
     @property
+    def device_path(self):
+        """Protocol Version."""
+        return self._uart_path
+
+    @property
     def protocol_version(self):
         """Protocol Version."""
         return self._proto_ver
